@@ -1,27 +1,25 @@
-function randomText(){
-    var text =("!@#$%^*()")
-    letters = text[Math.floor(Math.random() * text.length)];
-    return letters;
+// matrix-cloud.js
+function randomText() {
+    var text = "!@#$%^*()";
+    return text[Math.floor(Math.random() * text.length)];
 }
 
 function rain() {
     let cloud = document.querySelector('.cloud');
-    e.classlist.add('drop');
-    cloud.appendChild(e);
+    let e = document.createElement('span'); // Create a new element for the raindrop
+    e.classList.add('drop'); // Add the 'drop' class
+    e.innerText = randomText(); // Set random symbol
+    e.style.left = Math.floor(Math.random() * window.innerWidth) + 'px'; // Random horizontal position
+    e.style.fontSize = (0.5 + Math.random() * 1.5) + 'em'; // Random font size
+    e.style.animationDuration = (1 + Math.random()) + 's'; // Random animation duration
 
-    let left = Math.floor(Math.random() * 300)
-    let size = Math.random() * 1.5;
-    let duration = Math.random() *1;
+    cloud.appendChild(e); // Add the raindrop to the cloud
 
-    e.innerText = randomText();
-    e.style.left = left + 'px';
-    e.style.fontSize = 0.5+size +'em';
-    e.style.animationDuration = 1+duration+'s';
-
-        setTimeoout(function(){
-            cloud.removeChild(e)
-        },2000)
+    setTimeout(function() {
+        cloud.removeChild(e); // Remove the raindrop after 2 seconds
+    }, 2000);
 }
-setInterval(function(){
-    rain()
-},20);
+
+setInterval(function() {
+    rain();
+}, 20);
