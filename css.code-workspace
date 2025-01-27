@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "css",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/css"
+		},
+		{
+			"name": "html",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/html"
+		},
+		{
+			"name": "images",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/images"
+		},
+		{
+			"name": "js",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/js"
+		},
+		{
+			"name": "models",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/models"
+		},
+		{
+			"name": "routes",
+			"path": "../OneDrive/Desktop/kenyan_gov_projects/routes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}
