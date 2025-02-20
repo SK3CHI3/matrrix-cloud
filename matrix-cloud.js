@@ -23,3 +23,4 @@ function rain() {
 setInterval(function() {
     rain();
 }, 20);
+//So Apparently Thats How Its Done.
