@@ -1,4 +1,5 @@
 // matrix-cloud.js
+
 function randomText() {
     var text = "!@#$%^*()";
     return text[Math.floor(Math.random() * text.length)];
